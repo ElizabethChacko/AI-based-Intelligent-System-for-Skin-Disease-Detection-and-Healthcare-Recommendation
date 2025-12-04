@@ -202,10 +202,7 @@ def format_recommendation(disease_name):
     output.append(f"\n💊 Recommendations:")
     
     for recommendation in rec['recommendations']:
-        if not recommendation.startswith('•'):
-            output.append(f"   • {recommendation}")
-        else:
-            output.append(f"   {recommendation}")
+        output.append(f"   {recommendation}")
     
     if 'treatment_options' in rec:
         output.append(f"\n🏥 Treatment Options:")

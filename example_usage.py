@@ -21,7 +21,9 @@ from healthcare_recommendations import format_recommendation, is_emergency
 
 
 # Configuration
-MODEL_PATH = 'skin_disease_model.h5'
+# Note: This should match the filename saved in the Colab notebook
+# Default is 'skin_disease_detection_model.h5' as saved by the notebook
+MODEL_PATH = 'skin_disease_detection_model.h5'
 IMG_HEIGHT = 224
 IMG_WIDTH = 224
 
